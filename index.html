@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("feuhp0oaSqgolfHkR");
+    })();
+</script>
+
+<body>
+    <nav>
+        <img src="Image/Logo.png" class="Logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <p>Game Artist and Programmer</p>
+                <h1>Hi, I'm Fathan Firdaus Nuzulan</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------------------about----------------------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="image-switcher">
+                        <img src="Image/user.jpg" class="animate-on-scroll main-image" id="aboutImage">
+                        <button class="single-image-btn" onclick="toggleAboutImage('image/BG.png')">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title animate-on-scroll">About Me</h1>
+                    <p class="animate-on-scroll">I'm an Informatics student at Telkom University Bandung, currently exploring C++ and diving into the creative world of game development. 
+                        My interest in game art drives me to keep learning and experimenting. 
+                        I enjoy collaborating in teams, building ideas together, and creating experiences that feel meaningful. 
+                        although i'm still a beginner, I'm eager to grow, improve, and push myself toward becoming better every day.</p>
+
+                        <div class="tab-titles animate-on-scroll">
+                            <p class="tab-links active-link" onclick="opentab('Experiences')">Experiences</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab animate-on-scroll" id="Experiences">
+                            <ul>
+                                <li><span>2025 - current</span><br>Game Artist at Advanced Software Engineering Laboratory</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents animate-on-scroll" id="Education">
+                            <ul>
+                                <li><span>2024 - current</span><br>Telkom University Bandung</li>
+                                <li><span>2021 - 2024</span><br>Fastabiqul Khairat Highschool</li>
+                                <li><span>2018 - 2021</span><br>Fastabiqul Khairat Junior Highschool</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------skills-------------------------------------------------------------->
+    <section class="Skills" id="Skills">
+        <h2 class="heading animate-on-scroll">Skills</h2>
+        <div class="container animate-on-scroll">
+            <div class="row" id = "skillscontainer animate-on-scroll"> 
+                <div class="bar">
+                    <div class="info">
+                        <img src="Image/html-5.svg">
+                        <span>HTML</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="Image/css-3.svg">
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="Image/javascript.svg">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="Image/c-plusplus.svg">
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="Image/go.svg">
+                        <span>Go</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="Image/adobe-after-effects.svg">
+                        <span>After Effect</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="Image/aseprite.svg">
+                        <span>Aseprite</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="Image/medibangpaint.png">
+                        <span>MediBang Paint</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="Image/mine-imator.png">
+                        <span>Mine-imator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-------------------------------------------------------Project------------------------------------------------------>
+    <section id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src="Image/Project/Studio name.png">
+                <div class="project-info">
+                    <p class="project-type">Video Game</p>
+                    <h3>Project Umbra</h3>
+                    <p class="project-desc">Project Umbra is a game where the players taking a role as gods responsible for 
+                        managing multiple worlds.</p>
+                    <a href="#" class="read-more" onclick="openProjectModal([
+                    'Image/Project/Studio name.png', 
+                    'Image/Project/Main Scene.png',
+                    'Image/Project/Sighelm Road + easter.png',
+                    'Image/Project/old castle maltheron + easter.png',
+                    'Image/Project/dreadwyn Castle + easter.png',
+                    'Image/Project/devil ravine + easter.png'],
+                    'Project Umbra', 'Project Umbra', 'Project Umbra is game where the players taking a role as gods responsible for managing multiple worlds. As the Game Artist on this project, I was in charge of creating all the visual assets for the game. The game features unique art style and character designs that enhance the gameplay experience.')"
+                    >Read More</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Image/Project/yuu.png">
+                <div class="project-info">
+                    <p class="project-type">Art</p>
+                    <h3>Personal Art Account</h3>
+                    <p class="project-desc">take a moment to see my art post on my Instagram account.
+                    </p>
+                    <a href="#" class="read-more" onclick="openProjectModal(['Image/Project/yuu.png'], 'Instagram : @franzz_fn', 'Personal Art Account',
+                     'Drawing has become one of my favorite things to do. Sometimes I take a moment to draw something that I like and post it on my Instagram account. My art style focuses on character design and digital painting, exploring various themes from fantasy to everyday life.')"
+                     >Read More</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Image/BG.png">
+                <div class="project-info">
+                    <p class="project-type">Video Game</p>
+                    <h3>Age of Venture</h3>
+                    <p class="project-desc">Age of Venture is a game concept I developed.</p>
+                    <a href="#" class="read-more" onclick="openProjectModal(['Image/BG.png'], 'Video Game', 'Age of Venture', 
+                    'Age of Venture is a game concept I developed for my application to the Game Development division lab that I am currently part of. This project showcases my ability to create engaging game mechanics and compelling narratives in a strategy-based adventure game.')"
+                    >Read More</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Image/AE-generic.jpg">
+                <div class="project-info">
+                    <p class="project-type">Editing</p>
+                    <h3>Personal Editing Account</h3>
+                    <p class="project-desc">This is where sometimes i post my editing videos.</p>
+                    <a href="#" class="read-more" onclick="openProjectModal(['Image/AE-generic.jpg'], 'Video Game', 'Age of Venture', 
+                    'Age of Venture is a game concept I developed for my application to the Game Development division lab that I am currently part of. This project showcases my ability to create engaging game mechanics and compelling narratives in a strategy-based adventure game.')"
+                    >Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------- Project Modal ----------------------------->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Project Title</h2>
+                </div>
+                <div class="modal-image-container">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <div class="modal-image">
+                        <img id="modalImg" src="" alt="Project Image">
+                    </div>
+                    <button class="nav-btn next-btn">&gt;</button>
+                    <div class="image-counter">
+                        <span id="currentImage">1</span> / <span id="totalImages">3</span>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <p id="modalType" class="project-type">Video Game</p>
+                    <p id="modalDesc" class="project-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------------------------------------------------contact----------------------------------------------------------->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> fathan19fn@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/fathan_fn/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/fathan-fn-21206628a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://steamcommunity.com/profiles/76561198984348910/"><i class="fa-brands fa-square-steam"></i></a>                  
+                    </div>
+                    <a href="Image/My Cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contactForm">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<footer class="footer">
+    © 2025 Fathan Firdaus Nuzulan. All rights reserved.
+</footer>
+    <script src="main.js"></script>
+</body>
+</html>
